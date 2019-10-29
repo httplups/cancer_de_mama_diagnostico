@@ -4,8 +4,8 @@ function [A,C] = combinacoes(n, G, ytr)
   
   
   
-  # iterando os pacientes
-    for i = 1:n
+  # Encontrando os valores da matriz A
+  for i = 1:n
         for j = 1:n
           #printf("(%d,%d,%d)\n", i,j,k);
           A(i,j) = dot(G(i,:), G(j,:));
@@ -15,6 +15,9 @@ function [A,C] = combinacoes(n, G, ytr)
         
         C(i) = dot(G(i,:), ytr);
         
-    end
+   end
+  
+  
+  
   
 end

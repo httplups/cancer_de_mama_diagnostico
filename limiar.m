@@ -8,3 +8,6 @@ function Yteste = limiar(S, L, m)
     end
   end
 end
+
+
+

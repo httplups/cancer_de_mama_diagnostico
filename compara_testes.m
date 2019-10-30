@@ -13,7 +13,7 @@ function [count_corretos, ac, tfn] = compara_testes(Yteste, ytr, m)
         count_maligno++;
       end
   end
-  printf("Cancer malig: %d\n", count_maligno);
+  #printf("Cancer malig: %d\n", count_maligno);
   ac = count_corretos/m;
   tfn = count_tfn/count_maligno;
 end

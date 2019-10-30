@@ -1,4 +1,4 @@
-function [A,C] = combinacoes(n, G, ytr)
+function [A,C] = minimos_quadrados(n, G, ytr)
   A = zeros(n,n);
   C = linspace(0,0,n);
   

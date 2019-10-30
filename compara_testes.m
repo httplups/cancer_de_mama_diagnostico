@@ -2,7 +2,7 @@ function [count_corretos, ac, tfn] = compara_testes(Yteste, ytr, m)
   count_corretos = 0;
   count_tfn = 0;
   count_maligno = 0;
-  for i = 1:393
+  for i = 1:m
       if (Yteste(i) == ytr(i))
         count_corretos++;
       end
@@ -14,6 +14,6 @@ function [count_corretos, ac, tfn] = compara_testes(Yteste, ytr, m)
       end
   end
   printf("Cancer malig: %d\n", count_maligno);
-  ac = count_corretos/393;
+  ac = count_corretos/m;
   tfn = count_tfn/count_maligno;
 end
